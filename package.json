@@ -1,0 +1,14 @@
+{
+  "name": "mountebank-lab",
+  "version": "1.0.0",
+  "description": "Experimenting with mountebank",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "author": "David Vujic",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^11.x"
+  }
+}
