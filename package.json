@@ -4,11 +4,15 @@
   "description": "Experimenting with mountebank",
   "main": "index.js",
   "scripts": {
+    "mb": "mb",
     "test": "standard"
   },
   "author": "David Vujic",
   "license": "MIT",
   "devDependencies": {
-    "standard": "^11.x"
+    "mountebank": "^1.14.0",
+    "shelljs": "^0.8.1",
+    "standard": "^11.x",
+    "yargs": "^11.0.0"
   }
 }

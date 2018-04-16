@@ -3,7 +3,12 @@ const net = require('net')
 function createClient (port, host, resolve) {
   const socket = new net.Socket()
 
-  socket.on('readable', () => console.log('Message:', socket.read().toString()))
+  socket.on('readable', () => {
+    const data = socket.read()
+    const message = data ? data.toString() : ''
+    console.log('Message:', message)
+  })
+
   socket.on('error', (err) => console.error(err))
   socket.on('close', () => console.log('socket closed'))
   socket.on('disconnect', () => console.log('socket disconnected'))
